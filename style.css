@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #f0f0f0;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00ffcc;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #222;
+}
+
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.game-card {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px #000;
+  text-align: center;
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}[13/05/2025 10:16] Ma4: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Play Zone</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Play Zone</h1>
+    <nav>
+      <a href="#games">Games</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Play Zone</h2>
+    <p>Your ultimate gaming hub</p>
+  </section>
+
+  <section class="game-list" id="games">
+    <div class="game-card">
+      <img src="images/game1.jpg" alt="Game 1">
+      <h3>Shadow Quest</h3>
+      <p>Action RPG with stunning graphics.</p>
+      <button onclick="alert('Launching Shadow Quest!')">Play</button>
+    </div>
+    <div class="game-card">
+      <img src="images/game2.jpg" alt="Game 2">
+      <h3>Cyber Drift</h3>
+      <p>Futuristic neon racing game.</p>
+      <button onclick="alert('Launching Cyber Drift!')">Play</button>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-form">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Play Zone. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+[13/05/2025 10:17] Ma4: .contact-form {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #00ffcc;
+  color: #121212;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #00e6b8;
+}
